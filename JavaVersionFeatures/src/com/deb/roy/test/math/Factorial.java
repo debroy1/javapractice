@@ -7,6 +7,7 @@ public class Factorial {
 	}
 	
 	static long factorial(long num) {
+		// Function to find factorial of a positive integer
 		if (num == 0 || num == 1) {
 			return 1;
 		}
