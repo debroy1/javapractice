@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class Util {
-	private static final String APP_PROPERTIES_NAME = "tweet-app.properties";
+	private static final String APP_PROPERTIES_NAME = "app.properties";
 	public static String BOOTSTRAP_SERVER;
 	public static String TWITTER_TOPIC;
 	public static String CONSUMER_KEY;

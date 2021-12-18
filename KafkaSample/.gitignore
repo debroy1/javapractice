@@ -1,2 +1,3 @@
 /target/
-/src/main/resources/twitter.properties
+# ignore properties files
+*.properties

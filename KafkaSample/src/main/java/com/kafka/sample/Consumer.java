@@ -25,7 +25,7 @@ public class Consumer {
 		consumerWithSubscription();
 		//consumerWithAssignAndSeek();
 	}
-	
+
 	static void consumerWithSubscription() {
 		// set consumer properties
 		Properties properties = new Properties();
@@ -34,7 +34,7 @@ public class Consumer {
 		properties.setProperty(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
 		properties.setProperty(ConsumerConfig.GROUP_ID_CONFIG, "first-consumer-group");
 		properties.setProperty(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest"); //latest, earliest, none
-		
+
 		// create consumer
 		consumer = new KafkaConsumer<String, String>(properties);
 		// subscribe consumer to a topic
